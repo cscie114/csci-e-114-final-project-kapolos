@@ -1,0 +1,11 @@
+node_modules/
+.cache/
+public
+src/gatsby-types.d.ts
+.idea/
+.fetch-cache/
+.env
+
+# Local Netlify folder
+.netlify
+/bun.lockb
