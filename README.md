@@ -7,13 +7,13 @@ For the final project, I created a site about William Blake's poetry.
 There are multiple reasons for this:
 * I enjoy Blake's humor.
 * I have used Blake's poems in my music production.
-* There actually exists and API with Blake poems :)
+* There actually exists an API with Blake poems :)
 
 ## Functionality
 
 * Index page
 * All poems page
-* Individual poem page
+* Individual poem pages
 * Blake Poem Generator page (ChatGPT powered)
 
 Extra:
@@ -84,3 +84,9 @@ If you are using `WSL 2`, you will probably want to `export BROWSER=none` before
 ![Generator 1](https://i.imgur.com/o16aFx8.jpeg)
 ![Generator 2](https://i.imgur.com/zCQPc74.png)
 ![Generator 3](https://i.imgur.com/UNbNuss.png)
+
+## More songs
+
+Well, just one for now: [Spotify](https://open.spotify.com/album/67hjKMcUUEoJIXlpMBopRz?highlight=spotify:track:6nRQ66TyhttH0MSNRY5rHj)
+
+Best enjoyed with headphones.
