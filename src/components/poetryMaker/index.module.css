@@ -26,6 +26,12 @@
     color: red;
 }
 
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 label {
     display: block;
     font-size: 24px;
@@ -42,12 +48,6 @@ textarea {
     font-size: 18px;
     border: 2px dashed #2f2fa5;
     padding: 10px;
-}
-
-.buttonWrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 
 button {

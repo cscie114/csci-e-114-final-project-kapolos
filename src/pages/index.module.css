@@ -11,6 +11,6 @@
     width: 50%;
 }
 
-.right list {
-    display: inline-block;
+.right p {
+    padding-left: 40px;
 }

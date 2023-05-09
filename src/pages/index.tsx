@@ -30,6 +30,16 @@ const IndexPage: React.FC<PageProps<never>> = (props) => {
             </li>
           </ul>
 
+          <p>I am an amateur music producer. In two songs, I have used Blake's poetry. Enjoy!</p>
+
+          <ul>
+            <li>
+              <a href="/poem/the-little-boy-lost/">The Little Boy Lost</a>
+            </li>
+            <li>
+              <a href="/poem/the-tyger/">The Tyger</a>
+            </li>
+          </ul>
         </div>
       </div>
 

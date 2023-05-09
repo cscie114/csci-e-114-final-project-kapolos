@@ -15,7 +15,8 @@
     "clean": "gatsby clean",
     "typecheck": "tsc --noEmit",
     "lint": "npx ts-standardx --fix",
-    "test": "npx jest"
+    "test": "npx jest",
+    "wsldev": "BROWSER=none npx netlify dev"
   },
   "dependencies": {
     "@babel/preset-typescript": "^7.21.5",
