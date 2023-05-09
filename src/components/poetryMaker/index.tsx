@@ -20,6 +20,11 @@ const PoetryMaker: FC<Record<string, never>> = () => {
   const [userInput, setUserInput] = useState<string>('')
 
   const fetchGPTPoem = async (input: string): Promise<Perhaps<IResult>> => {
+    if (input.length === 0) {
+      alert('Please type something for the poor AI to work with.')
+      return
+    }
+
     try {
       const res = await fetch('/.netlify/functions/chatgpt', {
         method: 'POST',
@@ -57,14 +62,14 @@ const PoetryMaker: FC<Record<string, never>> = () => {
   }
 
   if (isLoading) {
-    return (<div>
-      ...loading
+    return (<div className={styles.loading}>
+      ...loading - it will take a moment or two...
     </div>)
   }
 
   if (isError) {
-    return (<div>
-      Something went wrong
+    return (<div className={styles.error}>
+      Something went wrong - ChatGPT did not respond properly.
     </div>)
   }
 
@@ -73,15 +78,25 @@ const PoetryMaker: FC<Record<string, never>> = () => {
       <div className={styles.formArea}>
         <label>
           What should the poem be about?
-          <textarea value={userInput} onChange={handleUserInputChange} />
         </label>
-        <div className="buttonWrapper">
+
+        <aside>
+          <p>Give BlakeAI a hint about what you want it to ponder upon.</p>
+          <p>No ideas? How about "Lilies, strawberries and the blue sky" ?</p>
+        </aside>
+
+        <textarea
+          value={userInput}
+          onChange={handleUserInputChange}
+          placeholder="Lilies, strawberries and the blue sky"/>
+
+        <div className={styles.buttonWrapper}>
           <button onClick={handleClick}>Generate Poem</button>
         </div>
       </div>
 
       {data != null && (
-        <div className={styles.result}>
+        <div className={styles.poem}>
           {data.content}
         </div>
       )}

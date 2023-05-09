@@ -22,8 +22,12 @@ const IndexPage: React.FC<PageProps<never>> = (props) => {
 
         <div className={styles.right}>
           <ul>
-            <a href="/all-poems">All Poems</a>
-            <a href="/generator">Blake Poem Generator</a>
+            <li>
+              <a href="/all-poems">All Poems</a>
+            </li>
+            <li>
+              <a href="/generator">Blake Poem Generator</a>
+            </li>
           </ul>
 
         </div>

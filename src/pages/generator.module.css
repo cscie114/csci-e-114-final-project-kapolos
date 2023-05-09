@@ -2,7 +2,25 @@
 
 }
 
-textarea {
-    width: 300px;
-    height: 300px;
+.description {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 18px;
+    color: #072c4a;
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+.poetry {
+    display: flex;
+    justify-content: center;
+}
+
+.poem {
+    white-space: pre-line;
+    margin-top: 20px;
+    font-size: 24px;
+    text-align: center;
 }

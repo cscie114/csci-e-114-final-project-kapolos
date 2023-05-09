@@ -10,3 +10,7 @@
 .right {
     width: 50%;
 }
+
+.right list {
+    display: inline-block;
+}

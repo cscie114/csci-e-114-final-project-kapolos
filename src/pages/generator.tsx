@@ -6,11 +6,11 @@ import type { HeadFC, PageProps } from 'gatsby'
 import Layout from '../components/layout'
 import PoetryMaker from '../components/poetryMaker'
 
-// import * as styles from './generator.module.css'
+import * as styles from './generator.module.css'
 
 const GeneratorPage: React.FC<PageProps<never>> = (props) => {
   return (
-    <Layout pageId="__homepage">
+    <Layout pageId="__generator">
 
       <div className="container">
         <div>
@@ -21,7 +21,15 @@ const GeneratorPage: React.FC<PageProps<never>> = (props) => {
           <StaticImage src="../images/static/generator_blake.jpg" alt="William Blake Art"/>
         </div>
 
-        <div>
+        <div className={styles.description}>
+          <p>
+            By the wonders of ChatGPT
+          </p>
+          <p>you too may now</p>
+          <p>a poet be</p>
+        </div>
+
+        <div className={styles.poetry}>
           <PoetryMaker />
         </div>
       </div>
